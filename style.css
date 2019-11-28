@@ -1,0 +1,228 @@
+body h1 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 3%;
+}
+
+body a {
+  color: white;
+  text-decoration: none;
+}
+
+body .main {
+  background: #000;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+body .main header {
+  width: 1440px;
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main header .logo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: purple url(./assets/photo.jpg) no-repeat center;
+}
+
+body .main header .info {
+  width: 800px;
+  margin-left: 10%;
+}
+
+body .main header .info .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .main header .info .social a {
+  background-color: #325bcd;
+  padding: 40px;
+  margin-right: 10%;
+  font-size: 18px;
+}
+
+body .main header .info .social a li:hover {
+  color: #d6a810;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+body .main .education {
+  width: 1440px;
+  background: aqua url(./assets/down.svg) no-repeat 15% 42%;
+  padding: 5% 0;
+}
+
+body .main .education h1 {
+  color: black;
+  margin-left: 5%;
+}
+
+body .main .education h1:hover {
+  cursor: pointer;
+}
+
+body .main .education ul {
+  display: none;
+  margin-left: 5%;
+}
+
+body .main .education ul li {
+  font-size: 18px;
+}
+
+body .main .education ul li:nth-child(2n) {
+  margin-bottom: 2%;
+}
+
+body .main .education ul li:nth-child(2n-1) {
+  text-decoration: underline;
+  margin-bottom: 2px;
+}
+
+body .main .projects {
+  padding: 5% 0;
+  width: 1440px;
+  position: relative;
+}
+
+body .main .projects h1 {
+  margin-left: 5%;
+}
+
+body .main .projects .contr {
+  top: 50%;
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main .projects .contr button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main .projects .contr button:first-child {
+  background: #f5c506 url(./assets/slid_left.svg) no-repeat center;
+}
+
+body .main .projects .contr button:last-child {
+  background: #f5c506 url(./assets/slid_rig.svg) no-repeat center;
+}
+
+body .main .projects .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rosybrown;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body .main .projects .slider div {
+  height: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: rosybrown;
+}
+
+body .main .projects .slider div p {
+  font-size: 22px;
+  text-decoration: underline;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+body .main .projects .slider div ul {
+  margin-left: 5%;
+}
+
+body .main .projects .slider div ul li {
+  list-style: circle;
+  padding-top: 2%;
+  font-size: 18px;
+}
+
+body .main .projects .slider div a img {
+  margin-top: 2%;
+}
+
+body .main .projects .slider .block2 {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  body .main {
+    width: 640px;
+  }
+  body .main header {
+    width: 640px;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  body .main header .logo {
+    margin-left: 2%;
+  }
+  body .main header .info {
+    width: 330px;
+    margin-left: 2%;
+  }
+  body .main header .info .social a {
+    padding: 10px;
+  }
+  body .main .education {
+    width: 640px;
+    background: aqua url(./assets/down.svg) no-repeat 30% 42%;
+  }
+  body .main .projects {
+    width: 640px;
+  }
+  body .main .projects .slider {
+    width: 500px;
+  }
+  body .main .projects .slider ul {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
